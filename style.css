@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #2c3d47;
+}
+/* transform rotate */
+.transform-rotate{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.rotate-box{
+    width: 350px;
+    height: 250px;
+    transform: rotate(-15deg);
+    transition: .3s all linear;
+}
+.rotate-box img{
+    width: 350px;
+    height: 250px;
+}
+.rotate-box:hover{
+    transform: rotate(0deg);
+}
+/* end of transform rotate */
+/* transform skew */
+.transform-skew{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skew-box{
+    width: 350px;
+    height: 250px;
+    transform: skew(15deg);
+    transition: .3s all linear;
+}
+.skew-box img{
+    width: 350px;
+    height: 250px;
+}
+.skew-box:hover{
+    transform: skew(0deg);
+}
+/* end of transform skew */
+/* color change area */
+.transform-color{
+    width: 100%;
+    height: 500px;
+    margin-left: 100px;
+}
+.color-box{
+    width: 400px;
+    height: 280px;
+    background-color: #00ff37;
+    animation-name: change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.color-box img{
+    width: 400px;
+    height: 280px;
+}
+@keyframes change{
+    0%{
+        background-color: #00ff37;
+        top: 0;
+        left: 0;
+    }
+    25%{
+        background-color: #ff5100;
+        left: 700px;
+        top: 0px;
+    }
+    50%{
+        background-color: #1100ff;
+        left: 700px;
+        top: 200px;
+    }
+    75%{
+        background-color: #6200ff;
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        background-color: #ff00f2;
+        left: 0;
+        top: 0;
+    }
+}
+/* end of color change area */
